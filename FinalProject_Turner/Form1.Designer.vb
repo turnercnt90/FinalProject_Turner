@@ -28,6 +28,10 @@ Partial Class Form1
         Me.LblServicePerformed = New System.Windows.Forms.Label()
         Me.ChkStudentDiscount = New System.Windows.Forms.CheckBox()
         Me.ChkFamilyDiscount = New System.Windows.Forms.CheckBox()
+        Me.BtnFind = New System.Windows.Forms.Button()
+        Me.BtnEstimate = New System.Windows.Forms.Button()
+        Me.BtnClear = New System.Windows.Forms.Button()
+        Me.BtnSave = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ListBox1
@@ -40,15 +44,15 @@ Partial Class Form1
         '
         'TxtFindCustomer
         '
-        Me.TxtFindCustomer.Location = New System.Drawing.Point(92, 386)
+        Me.TxtFindCustomer.Location = New System.Drawing.Point(92, 179)
         Me.TxtFindCustomer.Name = "TxtFindCustomer"
-        Me.TxtFindCustomer.Size = New System.Drawing.Size(100, 20)
+        Me.TxtFindCustomer.Size = New System.Drawing.Size(145, 20)
         Me.TxtFindCustomer.TabIndex = 1
         '
         'LblFindCustomer
         '
         Me.LblFindCustomer.AutoSize = True
-        Me.LblFindCustomer.Location = New System.Drawing.Point(12, 389)
+        Me.LblFindCustomer.Location = New System.Drawing.Point(12, 182)
         Me.LblFindCustomer.Name = "LblFindCustomer"
         Me.LblFindCustomer.Size = New System.Drawing.Size(74, 13)
         Me.LblFindCustomer.TabIndex = 2
@@ -66,7 +70,7 @@ Partial Class Form1
         'ChkStudentDiscount
         '
         Me.ChkStudentDiscount.AutoSize = True
-        Me.ChkStudentDiscount.Location = New System.Drawing.Point(284, 41)
+        Me.ChkStudentDiscount.Location = New System.Drawing.Point(284, 42)
         Me.ChkStudentDiscount.Name = "ChkStudentDiscount"
         Me.ChkStudentDiscount.Size = New System.Drawing.Size(108, 17)
         Me.ChkStudentDiscount.TabIndex = 4
@@ -76,18 +80,58 @@ Partial Class Form1
         'ChkFamilyDiscount
         '
         Me.ChkFamilyDiscount.AutoSize = True
-        Me.ChkFamilyDiscount.Location = New System.Drawing.Point(284, 64)
+        Me.ChkFamilyDiscount.Location = New System.Drawing.Point(284, 79)
         Me.ChkFamilyDiscount.Name = "ChkFamilyDiscount"
         Me.ChkFamilyDiscount.Size = New System.Drawing.Size(100, 17)
         Me.ChkFamilyDiscount.TabIndex = 5
         Me.ChkFamilyDiscount.Text = "Family Discount"
         Me.ChkFamilyDiscount.UseVisualStyleBackColor = True
         '
+        'BtnFind
+        '
+        Me.BtnFind.Location = New System.Drawing.Point(66, 263)
+        Me.BtnFind.Name = "BtnFind"
+        Me.BtnFind.Size = New System.Drawing.Size(75, 23)
+        Me.BtnFind.TabIndex = 6
+        Me.BtnFind.Text = "Find"
+        Me.BtnFind.UseVisualStyleBackColor = True
+        '
+        'BtnEstimate
+        '
+        Me.BtnEstimate.Location = New System.Drawing.Point(162, 263)
+        Me.BtnEstimate.Name = "BtnEstimate"
+        Me.BtnEstimate.Size = New System.Drawing.Size(75, 23)
+        Me.BtnEstimate.TabIndex = 7
+        Me.BtnEstimate.Text = "Estimate"
+        Me.BtnEstimate.UseVisualStyleBackColor = True
+        '
+        'BtnClear
+        '
+        Me.BtnClear.Location = New System.Drawing.Point(259, 263)
+        Me.BtnClear.Name = "BtnClear"
+        Me.BtnClear.Size = New System.Drawing.Size(75, 23)
+        Me.BtnClear.TabIndex = 8
+        Me.BtnClear.Text = "Clear"
+        Me.BtnClear.UseVisualStyleBackColor = True
+        '
+        'BtnSave
+        '
+        Me.BtnSave.Location = New System.Drawing.Point(363, 263)
+        Me.BtnSave.Name = "BtnSave"
+        Me.BtnSave.Size = New System.Drawing.Size(75, 23)
+        Me.BtnSave.TabIndex = 9
+        Me.BtnSave.Text = "Save"
+        Me.BtnSave.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(470, 451)
+        Me.ClientSize = New System.Drawing.Size(470, 315)
+        Me.Controls.Add(Me.BtnSave)
+        Me.Controls.Add(Me.BtnClear)
+        Me.Controls.Add(Me.BtnEstimate)
+        Me.Controls.Add(Me.BtnFind)
         Me.Controls.Add(Me.ChkFamilyDiscount)
         Me.Controls.Add(Me.ChkStudentDiscount)
         Me.Controls.Add(Me.LblServicePerformed)
@@ -107,4 +151,8 @@ Partial Class Form1
     Friend WithEvents LblServicePerformed As Label
     Friend WithEvents ChkStudentDiscount As CheckBox
     Friend WithEvents ChkFamilyDiscount As CheckBox
+    Friend WithEvents BtnFind As Button
+    Friend WithEvents BtnEstimate As Button
+    Friend WithEvents BtnClear As Button
+    Friend WithEvents BtnSave As Button
 End Class
