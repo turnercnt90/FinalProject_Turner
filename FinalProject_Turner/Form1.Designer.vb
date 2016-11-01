@@ -32,11 +32,13 @@ Partial Class Form1
         Me.BtnEstimate = New System.Windows.Forms.Button()
         Me.BtnClear = New System.Windows.Forms.Button()
         Me.BtnSave = New System.Windows.Forms.Button()
+        Me.BtnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Items.AddRange(New Object() {"Oil Change", "Brake Pads Changed", "Coolant Flush", "Tune Up", "Struts Changed", "Tires Rotated", "All Fluids Changed", "Ac Recharged"})
         Me.ListBox1.Location = New System.Drawing.Point(117, 42)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(120, 95)
@@ -89,7 +91,7 @@ Partial Class Form1
         '
         'BtnFind
         '
-        Me.BtnFind.Location = New System.Drawing.Point(66, 263)
+        Me.BtnFind.Location = New System.Drawing.Point(12, 263)
         Me.BtnFind.Name = "BtnFind"
         Me.BtnFind.Size = New System.Drawing.Size(75, 23)
         Me.BtnFind.TabIndex = 6
@@ -98,7 +100,7 @@ Partial Class Form1
         '
         'BtnEstimate
         '
-        Me.BtnEstimate.Location = New System.Drawing.Point(162, 263)
+        Me.BtnEstimate.Location = New System.Drawing.Point(106, 263)
         Me.BtnEstimate.Name = "BtnEstimate"
         Me.BtnEstimate.Size = New System.Drawing.Size(75, 23)
         Me.BtnEstimate.TabIndex = 7
@@ -107,7 +109,7 @@ Partial Class Form1
         '
         'BtnClear
         '
-        Me.BtnClear.Location = New System.Drawing.Point(259, 263)
+        Me.BtnClear.Location = New System.Drawing.Point(204, 263)
         Me.BtnClear.Name = "BtnClear"
         Me.BtnClear.Size = New System.Drawing.Size(75, 23)
         Me.BtnClear.TabIndex = 8
@@ -116,18 +118,28 @@ Partial Class Form1
         '
         'BtnSave
         '
-        Me.BtnSave.Location = New System.Drawing.Point(363, 263)
+        Me.BtnSave.Location = New System.Drawing.Point(302, 263)
         Me.BtnSave.Name = "BtnSave"
         Me.BtnSave.Size = New System.Drawing.Size(75, 23)
         Me.BtnSave.TabIndex = 9
         Me.BtnSave.Text = "Save"
         Me.BtnSave.UseVisualStyleBackColor = True
         '
+        'BtnExit
+        '
+        Me.BtnExit.Location = New System.Drawing.Point(394, 263)
+        Me.BtnExit.Name = "BtnExit"
+        Me.BtnExit.Size = New System.Drawing.Size(75, 23)
+        Me.BtnExit.TabIndex = 10
+        Me.BtnExit.Text = "Exit"
+        Me.BtnExit.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(470, 315)
+        Me.ClientSize = New System.Drawing.Size(482, 315)
+        Me.Controls.Add(Me.BtnExit)
         Me.Controls.Add(Me.BtnSave)
         Me.Controls.Add(Me.BtnClear)
         Me.Controls.Add(Me.BtnEstimate)
@@ -155,4 +167,5 @@ Partial Class Form1
     Friend WithEvents BtnEstimate As Button
     Friend WithEvents BtnClear As Button
     Friend WithEvents BtnSave As Button
+    Friend WithEvents BtnExit As Button
 End Class
