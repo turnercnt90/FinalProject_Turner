@@ -13,4 +13,11 @@
 
         End If
     End Sub
+
+    Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles BtnClear.Click
+        TxtFindCustomer.Clear()
+        ChkFamilyDiscount.Checked = False
+        ChkStudentDiscount.Checked = False
+        ListBox1.ClearSelected()
+    End Sub
 End Class

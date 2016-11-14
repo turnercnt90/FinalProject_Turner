@@ -41,6 +41,7 @@ Partial Class Form1
         Me.ListBox1.Items.AddRange(New Object() {"Oil Change", "Brake Pads Changed", "Coolant Flush", "Tune Up", "Struts Changed", "Tires Rotated", "All Fluids Changed", "Ac Recharged"})
         Me.ListBox1.Location = New System.Drawing.Point(117, 42)
         Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended
         Me.ListBox1.Size = New System.Drawing.Size(120, 95)
         Me.ListBox1.TabIndex = 0
         '
