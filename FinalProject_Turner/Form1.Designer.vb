@@ -33,6 +33,8 @@ Partial Class Form1
         Me.BtnClear = New System.Windows.Forms.Button()
         Me.BtnSave = New System.Windows.Forms.Button()
         Me.BtnExit = New System.Windows.Forms.Button()
+        Me.txtestimate = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ListBox1
@@ -135,11 +137,29 @@ Partial Class Form1
         Me.BtnExit.Text = "Exit"
         Me.BtnExit.UseVisualStyleBackColor = True
         '
+        'txtestimate
+        '
+        Me.txtestimate.Location = New System.Drawing.Point(369, 179)
+        Me.txtestimate.Name = "txtestimate"
+        Me.txtestimate.Size = New System.Drawing.Size(100, 20)
+        Me.txtestimate.TabIndex = 11
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(292, 179)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(71, 13)
+        Me.Label1.TabIndex = 12
+        Me.Label1.Text = "Estimate Cost"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(482, 315)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtestimate)
         Me.Controls.Add(Me.BtnExit)
         Me.Controls.Add(Me.BtnSave)
         Me.Controls.Add(Me.BtnClear)
@@ -169,4 +189,6 @@ Partial Class Form1
     Friend WithEvents BtnClear As Button
     Friend WithEvents BtnSave As Button
     Friend WithEvents BtnExit As Button
+    Friend WithEvents txtestimate As TextBox
+    Friend WithEvents Label1 As Label
 End Class
