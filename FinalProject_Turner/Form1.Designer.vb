@@ -130,7 +130,7 @@ Partial Class Form1
         '
         'BtnExit
         '
-        Me.BtnExit.Location = New System.Drawing.Point(394, 263)
+        Me.BtnExit.Location = New System.Drawing.Point(395, 263)
         Me.BtnExit.Name = "BtnExit"
         Me.BtnExit.Size = New System.Drawing.Size(75, 23)
         Me.BtnExit.TabIndex = 10
