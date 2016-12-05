@@ -1,4 +1,4 @@
-﻿Public Class Form2
+﻿Public Class CustomerInfomationForm
     Private Sub BtnExit_Click(sender As Object, e As EventArgs) Handles BtnExit.Click
         Dim response As MsgBoxResult
         response = MsgBox("Do you want to close form?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Confirm")

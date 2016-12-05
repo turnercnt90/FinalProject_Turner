@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class CarEstimatesForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -35,6 +35,16 @@ Partial Class Form1
         Me.BtnExit = New System.Windows.Forms.Button()
         Me.txtestimate = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AppointmentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AppointmentListToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CustomersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ListBox1
@@ -44,7 +54,7 @@ Partial Class Form1
         Me.ListBox1.Location = New System.Drawing.Point(117, 42)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended
-        Me.ListBox1.Size = New System.Drawing.Size(120, 95)
+        Me.ListBox1.Size = New System.Drawing.Size(120, 108)
         Me.ListBox1.TabIndex = 0
         '
         'TxtFindCustomer
@@ -153,11 +163,72 @@ Partial Class Form1
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Estimate Cost"
         '
-        'Form1
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.AppointmentsToolStripMenuItem, Me.CustomersToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(482, 24)
+        Me.MenuStrip1.TabIndex = 13
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(92, 22)
+        Me.ExitToolStripMenuItem.Text = "Exit"
+        '
+        'AppointmentsToolStripMenuItem
+        '
+        Me.AppointmentsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.ViewToolStripMenuItem, Me.AppointmentListToolStripMenuItem})
+        Me.AppointmentsToolStripMenuItem.Name = "AppointmentsToolStripMenuItem"
+        Me.AppointmentsToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
+        Me.AppointmentsToolStripMenuItem.Text = "Appointments"
+        '
+        'NewToolStripMenuItem
+        '
+        Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.NewToolStripMenuItem.Text = "New"
+        '
+        'ViewToolStripMenuItem
+        '
+        Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
+        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.ViewToolStripMenuItem.Text = "View"
+        '
+        'AppointmentListToolStripMenuItem
+        '
+        Me.AppointmentListToolStripMenuItem.Name = "AppointmentListToolStripMenuItem"
+        Me.AppointmentListToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.AppointmentListToolStripMenuItem.Text = "Appointment List"
+        '
+        'CustomersToolStripMenuItem
+        '
+        Me.CustomersToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ViewToolStripMenuItem1})
+        Me.CustomersToolStripMenuItem.Name = "CustomersToolStripMenuItem"
+        Me.CustomersToolStripMenuItem.Size = New System.Drawing.Size(76, 20)
+        Me.CustomersToolStripMenuItem.Text = "Customers"
+        '
+        'ViewToolStripMenuItem1
+        '
+        Me.ViewToolStripMenuItem1.Name = "ViewToolStripMenuItem1"
+        Me.ViewToolStripMenuItem1.Size = New System.Drawing.Size(99, 22)
+        Me.ViewToolStripMenuItem1.Text = "View"
+        '
+        'CarEstimatesForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(482, 315)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtestimate)
         Me.Controls.Add(Me.BtnExit)
@@ -171,8 +242,10 @@ Partial Class Form1
         Me.Controls.Add(Me.LblFindCustomer)
         Me.Controls.Add(Me.TxtFindCustomer)
         Me.Controls.Add(Me.ListBox1)
-        Me.Name = "Form1"
+        Me.Name = "CarEstimatesForm"
         Me.Text = "Cody's Car Estimates"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -191,4 +264,13 @@ Partial Class Form1
     Friend WithEvents BtnExit As Button
     Friend WithEvents txtestimate As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AppointmentsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NewToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ViewToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AppointmentListToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CustomersToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ViewToolStripMenuItem1 As ToolStripMenuItem
 End Class
